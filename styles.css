@@ -1,0 +1,1703 @@
+/* styles.css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input
+{
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+    outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+
+{
+  margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper
+{
+    position: relative; 
+    width: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -550px auto;
+}
+.wrapper:after
+{
+    display: block;
+    clear: both; 
+    height: 550px;
+    content: '';
+}
+
+.footer
+{
+    position: relative;
+    clear: both;
+    height: 550px;
+    background-color:#2C2C2C;
+}
+
+.footer_title {
+	color: #f2f2f2;
+	font-family: OpenSans, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 21px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.footer_list {
+	font-family: OpenSans, sans-serif;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 32px;
+}
+
+.footer_mail {
+	font-family: OpenSans, sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 21px;
+	margin-top: 15px;
+}
+
+body > .wrap {
+	height: auto; 
+	min-height: 100%;
+    font-family: Segoe UI;
+    overflow: hidden;
+}
+
+#main {
+	padding-bottom: 0px;
+}  /* отступ должен быть равен высоте футера */
+
+#footer {
+	position: relative;
+	margin-top: -550px; /* отрицательное значение высоты футера */
+	height: 550px;
+	clear:both;
+    color: #ffffff;
+} 
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* ЗАГОЛОВКИ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3,
+h5 {
+  text-align: center;
+}
+h1 {
+  font-size: 100px;
+  line-height: 120px;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+h3 {
+  line-height: 40px;
+}
+
+@media (max-width: 960px) {
+  h3 {
+    font-size: 15pt;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom:10px;
+  }
+}
+
+h2 {
+    line-height: 72px;
+    color: #1a1a1a;
+    font-family: OpenSans, sans-serif;
+    font-size: 28pt;
+    font-weight: 700;
+    padding-top:30px;
+}
+@media (max-width: 960px) {
+  h2 {
+    font-size: 20pt;
+    line-height: 45px;
+  }
+}
+
+
+h5 {
+  line-height: 40px;
+    color: #1a1a1a;
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+
+@media (max-width: 960px) {
+  h5 {
+    font-size: 11pt;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom:20px;
+  }
+}
+
+a {
+	outline: none!important;
+}
+
+	
+	/* ШАПКА САЙТА */
+
+/* div со слоганом*/
+div.slogan {
+    margin-top: 36px;
+}
+
+/* Шрифт слогана */
+.slogan {
+	color: #f1f1f1;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+/* div с социальными иконками */
+div.social_links {
+   width: 200px;
+   background-color: #333333;
+   border-radius:4px;
+   padding: 7px 0;
+   margin-top: 28px;
+   margin-left:-14px;
+   text-align: center;
+}
+
+/* Кнопка с телефоном */
+.phone_btn {
+	border: none;
+	margin-top: 28px;
+	padding: 9px 12px 9px 12px;
+}
+
+/* Появляющийся телефон */
+.phone_btn:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: -15%; top: 120%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,0,0,0.9); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 14px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+	border-radius:4px;
+   }
+   
+/* Кнопка с почтой */
+.mail_btn {
+	border: none;
+	margin-top: 28px;
+	padding: 9px 12px 9px 12px;
+}
+
+.menu_btn {
+	border: none;
+	margin-top: 28px;
+	padding: 9px 12px 9px 12px;
+}
+
+/* Появляющаяся почта */
+.mail_btn:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 2%; top: 120%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,0,0,0.9); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 14px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+	border-radius:4px;
+   }
+
+/* шрифт телефонов */
+.phone {
+	color: #ffffff;
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+/* Логотип */
+.logo {
+	margin: 10px 0 0 25px;
+}
+
+/* Чёрный фон */
+#nav-main {
+    background-color: #262626;
+}
+
+	
+	/* ГЛАВНОЕ МЕНЮ */
+
+/* Выделенный пункт в главном меню */
+#menu_active {
+	color:#ffffff;
+}
+
+/* Стили для li главного меню */
+.nav-item {
+    font-size: 14px;
+    max-width: 170px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px 35px 0px 21px;
+}
+
+
+/* белый треугольник для выделенного пункта главного меню */
+.block {
+    position: relative;
+    color: #fff;
+	margin-left:25%;
+   }
+   .block::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 30px; bottom: -10px; /* Положение треугольника */
+    border: 10px solid transparent;	
+	border-bottom: 10px solid #f5f5f5;
+   }
+
+	
+	/* ПОДМЕНЮ */
+   
+/* Серая полоса для подменю */
+#nav-second {
+    background-color: #f5f5f5;
+    
+}
+   
+/* Стили для li подменю */
+.nav-item-sec {
+    font-size: 11pt;
+    max-width: 270px;
+    text-align: center;
+    font-weight: 500;
+    float: left;
+    font-family: Helvetica;
+}
+
+/* Серая обводка при наведении на пункт подменю */
+.nav-item-sec:hover {
+	border-radius: 5px 5px 0 0;
+	background-color: #999999;
+}
+
+/* Единичная кнопка подменю */
+#round_but {
+	border-radius: 5px;
+}
+
+/* Белый цвет шрифта для пунктов подменю при наведении */
+#nav-second li:hover .nav-link {
+	color: #ffffff;
+}
+
+	
+	/* ВЫПАДАЮЩЕЕ МЕНЮ */
+
+/* Выпадающее меню ul*/
+.dropdown-menu {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    list-style: none;
+    min-width: 250px;
+	margin-top: -1px;
+	border-radius: 0;
+	border: none;
+}
+
+/* Стили для li выпадающего меню */
+.hub-header-dropdown li {
+box-sizing:border-box;
+color:rgb(84, 84, 84);
+display:list-item;
+float:left;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:13px;
+line-height:18px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+position:relative;
+text-align:left;
+}
+
+/* Стили для a выпадающего меню */
+.hub-header-dropdown a {
+    display:block;
+    background-color: #fff;
+    color: #666;
+    font-size: 11pt;
+    font-family: Helvetica;
+    padding: 9px 10px;
+    text-decoration:none;
+}
+
+/* Полоса при наведении на пункты выпадающего меню */
+.hub-header-dropdown a:hover, .hub-header-dropdown a:focus {
+    background-color:#e6e6e6;
+    text-decoration:none;
+}
+
+	
+	/* ПОЛОСА С ФОТО */
+
+/* Стили для полосы с фото */
+#sub_header_weddings {
+	height: 500px;
+    background: url(img/books/backgrounds/wedding.jpg) 100% 60% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_weddings {
+    height: 380px;
+}
+}
+
+#sub_header_reviews {
+    height: 500px;
+     background: url(img/books/backgrounds/reviews.jpg) 100% 45% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_reviews {
+    height: 350px;
+}
+}
+
+#sub_header_kids {
+	height: 500px;
+    background: url(img/books/backgrounds/kids.jpg) 100% 20% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_kids {
+    height: 350px;
+}
+}
+
+#sub_header_advert {
+	height: 500px;
+    background: url(img/books/backgrounds/ad.jpg) 100% 58% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_advert {
+    height: 350px;
+}
+}
+
+#sub_header_school {
+    height: 500px;
+    background: url(img/books/backgrounds/school.jpg) 100% 45% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_school {
+    height: 350px;
+}
+}
+
+#sub_header_autotestdrives {
+    height: 500px;
+    background: url(img/books/backgrounds/auto/testdrives.jpg) 100% 45% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_autotestdrives {
+    height: 350px;
+}
+}
+
+#sub_header_immovable {
+    height: 500px;
+    background: url(img/books/backgrounds/immovable/immovable.jpg) 100% 15% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_immovable {
+    height: 350px;
+}
+}
+
+#sub_header_promo_advert {
+    height: 500px;
+    background: url(img/books/backgrounds/promo/2.jpg) 100% 55% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_promo_advert {
+    height: 350px;
+}
+}
+
+#sub_header_promo_advert_game {
+    height: 500px;
+    background: url(img/books/backgrounds/promo/1.jpg) 100% 55% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_promo_advert_game {
+    height: 350px;
+}
+}
+
+#sub_header_social_advert {
+    height: 500px;
+    background: url(img/books/backgrounds/social/1.jpg) 100% 35% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_social_advert {
+    height: 350px;
+}
+}
+
+#sub_header_review_advert {
+    height: 500px;
+    background: url(img/books/backgrounds/ad/1.jpg) 100% 55% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_review_advert {
+    height: 350px;
+}
+}
+
+#sub_header_game_advert {
+    height: 500px;
+    background: url(img/books/backgrounds/ad/2.jpg) 100% 50% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_game_advert {
+    height: 350px;
+}
+}
+
+#sub_header_nasledniki_pobedy {
+    height: 500px;
+    background: url(img/books/backgrounds/goverment/1.jpg) 100% 30% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_nasledniki_pobedy {
+    height: 350px;
+}
+}
+
+#sub_header_vahta_pamyati {
+    height: 500px;
+    background: url(img/books/backgrounds/goverment/2.jpg) 100% 60% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_vahta_pamyati {
+    height: 350px;
+}
+}
+
+#sub_header_yagp {
+    height: 500px;
+    background: url(img/books/backgrounds/goverment/3.jpg) 100% 60% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_yagp {
+    height: 350px;
+}
+}
+
+#sub_header_teambuilding {
+    height: 500px;
+    background: url(img/books/backgrounds/teambuilding/1.jpg) 100% 10% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_teambuilding {
+    height: 350px;
+}
+}
+
+#sub_header_stars {
+    height: 500px;
+    background: url(img/books/backgrounds/stars/1.jpg) 100% 70% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_stars {
+    height: 350px;
+}
+}
+
+#sub_header_kreshenie {
+    height: 500px;
+    background: url(img/books/backgrounds/church/1.jpg) 100% 70% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_kreshenie {
+    height: 350px;
+}
+}
+
+#sub_header_venchanie {
+    height: 500px;
+    background: url(img/books/backgrounds/church/2.jpg) 100% 80% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_venchanie {
+    height: 350px;
+}
+}
+
+#sub_header_church_other_events {
+    height: 500px;
+    background: url(img/books/backgrounds/church/3.jpg) 100% 50% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_church_other_events {
+    height: 350px;
+}
+}
+
+#sub_header_clubs {
+    height: 500px;
+    background: url(img/books/backgrounds/clubs/1.jpg) 100% 50% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_clubs {
+    height: 350px;
+}
+}
+
+#sub_header_wedding_linears_clips {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/1.jpg) 100% 30% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_wedding_linears_clips {
+    height: 350px;
+}
+}
+
+#sub_header_wedding_not_linears_clips {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/4.jpg) 100% 75% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_wedding_not_linears_clips {
+    height: 350px;
+}
+}
+
+#sub_header_wedding_films {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/2.jpg) 100% 50% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_wedding_films {
+    height: 350px;
+}
+}
+
+#sub_header_sde {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/3.jpg) 100% 30% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_sde {
+    height: 350px;
+}
+}
+
+#sub_header_postproduction {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/5.jpg) 100% 30% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_postproduction {
+    height: 350px;
+}
+}
+
+#sub_header_love_story_classic {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/6.jpg) 100% 50% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_love_story_classic {
+    height: 350px;
+}
+}
+
+#sub_header_love_story_game {
+    height: 500px;
+    background: url(img/books/backgrounds/wedding/7.jpg) 100% 50% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_love_story_game {
+    height: 350px;
+}
+}
+
+#sub_header_kids_birthdays_0_3 {
+    height: 500px;
+    background: url(img/books/backgrounds/kids/2.jpg) 100% 70% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_kids_birthdays_0_3 {
+    height: 350px;
+}
+}
+
+#sub_header_new_year {
+    height: 500px;
+    background: url(img/books/backgrounds/kids/4.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_new_year {
+    height: 350px;
+}
+}
+
+#sub_header_musical_clips {
+    height: 500px;
+    background: url(img/books/backgrounds/musical_clips/1.jpg) 100% 40% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_musical_clips {
+    height: 350px;
+}
+}
+
+#sub_header_wfys2017 {
+    height: 500px;
+    background: url(img/books/backgrounds/goverment/4.jpg) 100% 40% no-repeat;
+    background-size: cover;
+    margin-bottom:30px;
+}
+
+@media (max-width: 960px) {
+  #sub_header_wfys2017 {
+    height: 350px;
+}
+}
+
+#sub_header_kids_birthdays_4_7 {
+    height: 500px;
+    background: url(img/books/backgrounds/kids/1.jpg) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_kids_birthdays_4_7 {
+    height: 350px;
+}
+}
+
+#sub_header_kids_birthdays_8_12 {
+    height: 500px;
+    background: url(img/books/backgrounds/kids/3.jpg) 100% 70% no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+  #sub_header_kids_birthdays_8_12 {
+    height: 350px;
+}
+}
+
+#sub_header_other {
+    height: 500px;
+    background: url(img/books/backgrounds/1.jpg) 100% 20% no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width: 960px) {
+  #sub_header_other {
+    height: 350px;
+}
+}
+
+
+.cover {
+    padding-top: 25%;
+}
+
+@media (max-width: 960px) {
+  .cover {
+    padding-top: 28%;
+    }
+}
+
+.title {
+    padding: 7px 8px 7px 8px;
+    color: #1a1a1a;
+    font-family: Roboto;
+    font-size: 35pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(98%, 98%, 98%, 0.7);
+}
+
+@media (min-width: 961px) and (max-width: 1980px) {
+  .title {
+    font-size: 32pt;
+    }
+}
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 20pt;
+    }
+}
+
+.title2rows {
+    padding: 7px 8px 7px 8px;
+    color: #1a1a1a;
+    font-family: Roboto;
+    font-size: 30pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(98%, 98%, 98%, 0.7);
+}
+
+@media (min-width: 961px) and (max-width: 1980px) {
+  .title2rows {
+    font-size: 27pt;
+    }
+}
+
+@media (max-width: 960px) {
+  .title2rows {
+    font-size: 17pt;
+    }
+}
+
+
+div .subtitle {
+margin: 2% auto;
+min-width: 300px;
+max-width: 700px;
+}
+
+@media (max-width: 960px) {
+  div .subtitle {
+    margin: 3% auto;
+}
+}
+
+.subtitle {
+    padding: 10px 25px 10px 25px;
+    color: #1a1a1a;
+    font-family: Roboto;
+    font-size: 16pt;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(98%, 98%, 98%, 0.7);
+}
+
+@media (max-width: 960px) {
+  .subtitle {
+    font-size: 12pt;
+}
+}
+
+.title_index {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.title_but {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#title_but {
+	width:170px;
+	height: 38px;
+	font-family: Roboto;
+	font-size: 9pt;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: 300;
+	 border: 0;
+	 border-radius: 3px;
+	 cursor: pointer;
+	 outline: none!important;
+	 
+}
+
+.cover_index {
+    padding-top: 12%;
+}
+
+.subtitle_index {
+    padding: 10px 25px 10px 25px;
+    color: #c1c1c1;
+    font-family: Roboto;
+    font-size: 11pt;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.main_content {
+	height:autocomments;
+}
+
+    /* CONTENT */
+
+/* Отзывы клиентов по Свадьбам */
+
+.title_comments {
+    padding-top: 4%;
+    color: #222222;
+    font-family: Roboto;
+    font-size: 25pt;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slider_comments {
+    margin-bottom: 30px;
+}
+
+.avatar_comments {
+    text-align: left;
+}
+
+.text_comments {
+    color: #222222;
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+@media (max-width: 960px) {
+  .text_comments {
+    font-size: 12pt;
+    line-height: 30px;
+}
+}
+
+.text_comments p{
+    color: #222222;
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 960px) {
+  .text_comments p{
+    font-size: 12pt;
+    line-height: 30px;
+}
+}
+
+.comments {
+	height:auto;
+	padding-bottom: 40px;
+}
+
+.comments a{
+	color: #111111;
+	text-decoration: none;
+}
+
+.link_comments {
+	font-family: Roboto;
+text-align: center;
+margin-top: 50px;
+font-size: 21px;
+}
+
+#grey_bg {
+background-color: #FCFCFC;
+}
+
+#white_bg {
+	margin-top: 40px;
+}
+
+    /* FOOTER */
+footer a {
+    color:#cccccc;
+    outline: none!important;
+}
+
+footer a:hover {
+    color:#f2f2f2;
+    text-decoration:none;
+}
+
+footer a:active {
+    color:#f2f2f2;
+    text-decoration:none;
+}
+
+/* Логотип в футере */
+footer .logo {
+    margin: 28px 0 0 25px;
+}
+
+/* Телефоны в футере */
+.tel {
+	font-family: OpenSans, sans-serif;
+    color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 31px;
+}
+
+.city {
+	font-family: OpenSans, sans-serif;
+    color: #cccccc;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 31px;
+	margin-top: 10px;
+}
+
+.tel a{
+    color: #ffffff;
+}
+
+/* Почта в футере */
+.mail {
+    color: #f2f2f2;
+    margin-top: 51px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+/* div с социальными иконками в футере */
+footer div.social_links {
+   width: 200px;
+   background-color: #333333;
+   border-radius:4px;
+   padding: 7px 0;
+   margin-top: 43px;
+   margin-left:-14px;
+   text-align: center;
+}
+
+
+/*КЛИЕНТЫ*/
+#clients{
+background-color:#F5F5F5;
+}
+
+.clients {
+    margin:50px;
+}
+
+/*==================================================================
+10. Fluid Blocks / .fluid, .fluid-width, .fluid-height
+==================================================================*/
+.fluid {
+  width: 100%;
+  position: relative;
+}
+.fluid > * {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+}
+.fluid-width {
+  width: 100%;
+  height: auto;
+}
+.fluid-height {
+  width: auto;
+  height: 100%;
+}
+
+.title_clients {
+  text-transform: uppercase;
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+.caption {
+	margin-top: 8px;
+    margin-bottom:30px;
+}
+
+.caption p{
+    font-size:13pt;
+    text-align: center;
+}
+
+.title_clients {
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+.mb30 {
+    margin-bottom:30px;
+}
+
+.mb40 {
+    margin-bottom:40px;
+}
+
+.mb15 {
+    margin-bottom:15px;
+}
+
+.mt15 {
+    margin-top:15px;
+}
+
+.mt30 {
+    margin-top:30px;
+}
+
+.mt40 {
+    margin-top:40px;
+}
+
+.mb100 {
+    margin-bottom:100px;
+}
+
+.pt40 {
+    padding-top:40px;
+}
+
+/*Контейнер для изображения из галереи*/
+.technic {
+    float: left; 
+    width: 100%; 
+    height: 300px; 
+    position: relative;
+    margin-bottom:30px;
+}
+
+.imageWrap > div {
+    float: left; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    background-size: cover !important; 
+    background-position: center center;
+}
+
+/*Видеогалерея*/
+
+.video_title p{
+    color: #1a1a1a;
+    font-family: Roboto;
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+.video_description p{
+    color: #1a1a1a;
+    font-family: Roboto;
+    font-size: 13pt;
+    font-weight: 300;
+    margin-top:20px;
+}
+
+#dialer_portal {
+    height: 300px;
+    background-color:#F4F4F4;
+}
+
+.dealer_portal {
+    text-align:center;
+    margin-top:50px;
+}
+
+.dealer_portal img {
+width:300px;
+}
+
+
+/*СВАДЕБНЫЕ ПАКЕТЫ УСЛУГ*/
+
+/*Параметры блоков*/
+.price_block {
+    text-align:center;
+    background-color:#F8F8F8;
+    padding:15px 30px 40px 30px;
+}
+
+/*Список услуг*/
+.price_block p{
+    font-size: 11pt;
+    font-weight: 400;
+    padding-top:20px;
+}
+
+/*Стоимость*/
+.price_block h1{
+    font-size: 55pt;
+    line-height: 50px;
+    margin:10px 0 0 0;
+    font-weight: 300;
+}
+
+/*Валюта*/
+.price_block h2{
+    letter-spacing: 3px;
+    line-height: 0;
+    color: #000000;
+    font-size: 11pt;
+    font-weight: 400;
+    margin:15px 0 15px 0;
+}
+
+/*Название пакета услуг*/
+.price_block h5{
+    letter-spacing: 2px;
+    line-height: 0.2;
+    color: #000000;
+    font-size: 14pt;
+    font-weight: 400;
+    margin:45px 0 30px 0;
+}
+
+/*выделенный блок*/
+#price_block_active {
+    background-color:#47B475;    
+}
+
+#price_block_active p{
+color:ffffff;
+}
+
+#price_block_active h1{
+color:ffffff;
+}
+
+#price_block_active h2{
+color:ffffff;
+}
+
+#price_block_active h5{
+color:ffffff;
+}
+
+
+/*ВОЗМОЖНЫЕ ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ*/
+/*Список услуг*/
+.services_block p{
+    font-size: 11pt;
+    font-weight: 400;
+    padding-top:20px;
+}
+
+/*Стоимость*/
+.services_block h1{
+    font-size: 55pt;
+    line-height: 50px;
+    margin:10px 0 0 0;
+    font-weight: 300;
+}
+
+/*Валюта*/
+.services_block h2{
+    letter-spacing: 3px;
+    line-height: 0;
+    color: #000000;
+    font-size: 11pt;
+    font-weight: 400;
+    margin:15px 0 15px 0;
+}
+
+/*Название пакета услуг*/
+.services_block h5{
+    letter-spacing: 2px;
+    line-height: 0.2;
+    color: #000000;
+    font-size: 14pt;
+    font-weight: 400;
+    margin:45px 0 30px 0;
+}
+
+.services_block h6{
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #000000;
+    font-size: 13pt;
+    font-weight: 500;
+    margin:15px 0 15px 0;
+}
+
+#services p{
+text-align:left;
+}
+
+#services h3{
+font-family: fontawesome;
+font-size: 35pt;
+margin-bottom: 35px;
+margin-top: 15px;
+color: #47B475;
+}
+
+/*Параметры блоков*/
+.services_block {
+    text-align:center;
+    background-color:#F8F8F8;
+    padding:15px 30px 40px 30px;
+    height: 500px;
+}
+
+.icon_set {
+	text-align:center;
+}
+
+.icon_set img{
+	height: 140px;
+	margin-top: 20px;
+}
+
+.icon_set p{
+	text-align:center;
+	font-family: OpenSansregular, sans-serif;
+	color: #111111;
+	font-size: 17px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.icon_set a{
+	text-decoration: none;
+}
+
+.icon_description p{
+	margin-top: 355px;
+}
+
+.main_index {
+    height: 100%;
+    background-image: url(img/other/pattern-2.jpg);
+}
+
+.main_index h2{
+	color: #252525;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 40px;
+	margin-top: 25px;
+}
+
+@media (max-width: 960px) {
+  .main_index h2 {
+    font-size: 25px;
+    line-height: 55px;
+  }
+}
+
+iframe {
+	display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*ВЫЕЗЖАЮЩЕЕ МЕНЮ ДЛЯ МОБИЛЬНЫХ*/
+.sidebar {
+    background-color: #efefef;
+    width: 500px;
+    height: 100%;
+    position:fixed;
+    right: -500px;
+    z-index: 100000;
+    overflow: auto;
+    -webkit-transition: right 0.3s ease-out 0.1s;
+    -moz-transition: right 0.3s ease-out 0.1s;
+    -o-transition: right 0.3s ease-out 0.1s;
+    transition: right 0.3s ease-out 0.1s; 
+}
+
+.sidebar.active {
+   right: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .sidebar {
+    width: 400px;
+   right: -400px;
+    }
+}
+
+
+
+@media (min-width: 1px) and (max-width: 767px){
+  .sidebar {
+    width: 300px;
+    right: -300px;
+    }
+}
+
+.mmenu_cover {
+    background: url(img/books/backgrounds/mmenu.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    height: 250px;
+    padding: 30px 30px;
+}
+
+@media (min-width: 1px) and (max-width: 767px){
+  .mmenu_cover {
+    height: 220px;
+}
+}
+
+.mmenu_logo {
+    margin-bottom: 20px;
+}
+
+.mmenu_slogan {
+    font-family: Segoe UI, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:#ffffff;
+    margin-bottom: 9px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 680px) and (max-width: 861px){
+  .mmenu_slogan {
+    font-size: 12px;
+    margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 680px){
+  .mmenu_slogan {
+    font-size: 11px;
+    margin-bottom: 15px;
+    }
+}
+
+.mmenu_contacts {
+    font-size: 15px;
+    font-family: OpenSans, sans-serif;
+    font-weight: 100;
+    color:#ffffff;
+    margin-bottom: 25px;
+    padding-left: 5px;
+}
+
+.mmenu_social_links i{
+    font-size: 25px;
+}
+
+.mmenu_chapter {
+    font-family: Segoe UI, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #e5e5e5;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+
+.sidebar a:hover{
+    text-decoration: none;
+}
+
+.sidebar a:active{
+    text-decoration: none;
+}
+
+.mmenu_submenu li{
+text-decoration: none;
+list-style-type: none;
+padding-left: 30px;
+margin-bottom: 15px;
+margin-top: 15px;
+font-family: Segoe UI;
+font-size: 14px;
+}
+
+.mmenu_submenu a{
+    color: #222222;
+}
+
+.mmenu_submenu a:hover{
+    color: #555555;
+}
+
+.mmenu_subtitle {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.mmenu_submenu ul li{
+font-size: 14px;
+}
+
+.mmenu_contacts_icons i{
+    color: #ffffff;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.mmenu_contacts_icons a:hover{
+    color: #bfbfbf;
+}
+
+.slidedown ul{
+    display: none;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height:100%;
+    right: -100%;
+    z-index: 99999;
+
+    -webkit-transition: right 0.3s ease-out 0.1s;
+    -moz-transition: right 0.3s ease-out 0.1s;
+    -o-transition: right 0.3s ease-out 0.1s;
+    transition: right 0.3s ease-out 0.1s; 
+}
+
+.black.active {
+   right: 0;
+}
