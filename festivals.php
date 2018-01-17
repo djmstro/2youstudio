@@ -30,6 +30,20 @@
 					<div class="container">
 					<h2>Фестивали</h2>
 						<h5>Любой стиль обзора, интервью с участниками и гостями</h5>
+									<!--0.9-->
+									<div class="row mb30" >
+											<div class="col-lg-8 col-md-9 col-sm-12">
+														<div>
+															<iframe src="https://player.vimeo.com/video/247727937?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+														</div>
+											</div>
+											<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+													<div class="video_title">
+														<p>Рубикон 2017</p>
+													</div>
+											</div>
+									</div>
+
 									<!--1-->
 									<div class="row mb30" >
 											<div class="col-lg-8 col-md-9 col-sm-12">
@@ -105,6 +119,15 @@
 					<div class="container">
 						<h2>Фестивали</h2>
 						<h5>Любой стиль обзора, <br>интервью с участниками и гостями</h5>
+									<!--0.9-->
+									<div class="row mb30" >
+											<div class="col-lg-8 col-md-9">
+														<div>
+															<iframe src="https://player.vimeo.com/video/247727937?title=0&byline=0&portrait=0" width="500" height="334" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+														</div>
+											</div>
+									</div>
+
 									<!--1-->
 									<div class="row mb30" >
 											<div class="col-lg-8 col-md-9">

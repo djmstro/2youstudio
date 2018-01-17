@@ -44,6 +44,20 @@
 					<div class="container">
 						<h2>Рекламное видео "Под ключ"</h2>
 						<h5>Повышаем продажи и эффективность рекламы</h5>
+									<!--0.9-->
+									<div class="row mb30" >
+											<div class="col-lg-8 col-md-9 col-sm-12">
+														<div>
+															<iframe src="https://player.vimeo.com/video/248768054?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+														</div>
+											</div>
+											<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+													<div class="video_title">
+														<p>Съёмка новогоднего ролика для "Мерседес-Бенц РУС"<br>(Публикация в Instagram)</p>
+													</div>
+											</div>
+									</div>
+
 									<!--8-->
 									<div class="row mb30" >
 											<div class="col-lg-8 col-md-9 col-sm-12">
@@ -161,6 +175,15 @@
 					<div class="container">
 						<h2>Рекламное видео <br>"Под ключ"</h2>
 						<h5>Повышаем продажи <br>и эффективность рекламы</h5>
+									<!--0.9-->
+									<div class="row mb30" >
+											<div class="col-lg-8 col-md-9">
+														<div>
+															<iframe src="https://player.vimeo.com/video/248768054?title=0&byline=0&portrait=0" width="500" height="334" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+														</div>
+											</div>
+									</div>
+
 									<!--8-->
 									<div class="row mb30" >
 											<div class="col-lg-8 col-md-9">
